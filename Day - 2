@@ -1,0 +1,166 @@
+
+# #! usr/bin/perl -w
+# $cookie = "";
+#  while ($cookie ne 'cookie') {
+#  	print 'I need it';
+#  	chomp ($cookie = <STDIN>);
+#  		# body...
+#  }
+#  print "Done.\n";
+# ! usr/local/bin/perl -w 
+# print "Hi :";
+#  print
+#  #save the data 
+#  $inputline = <STDIN>; 
+#  print $inputline;
+
+# #! usr/local/bin/perl
+
+
+# ##Username Testing##
+ 
+
+#  # $user = '';
+ 
+#  # while ( $user ne 'Krishna' )
+#  # {
+#  # print 'Enter Username :';
+#  # chomp($user = <STDIN>);
+#  # }
+#  # print 'Correct';
+
+#  ##User Testing Completed##
+
+
+
+
+#  #Code 6
+# #  #/  6. (Extra Credit) Combine the Hello World and Cookie examples so that the script
+# # prompts you for your name and then says hello to you, repeatedly, until you type
+# # goodbye. Here’s some sample output from this script:
+# # Enter your name: Laura
+# # Hello Laura!
+# # Enter your name: Anastasia
+# # Hello Anastasia!
+# # Enter your name: Turok the Almighty
+# # Hello Turok the Almighty!
+# # Enter your name: goodbye
+# # hello goodbye
+
+
+# #! usr/local/bin/perl -w
+# $Name = '';
+# while($Name ne 'Bye'){
+	
+# 	$Name=<STDIN>;
+# 	print 'Hello ';
+# 	print $Name;
+# }
+
+# print 'GoodDay!'
+
+
+# print "123 \n";
+
+# $b = 15/2;
+# print $b;
+# print "\n";
+
+# print int $b;
+# print "\n";
+# $v = 10/3;
+# $fgdg=sprintf("%.2f", $v);
+# print "$fgdg \n";
+
+# $t = 4.5 +5.7;
+# print $t;
+
+# perl -w -e "print 154/7";
+
+
+#!/usr/local/bin/perl -w
+
+
+##TEMPERATURE CONVERTOR
+
+# $fahr = 0;
+# $cel = 0;
+# print "Enter a temperature in Fahrenheit: ";
+# chomp ($fahr = <STDIN>);
+# $cel = ($fahr - 32) * 5 / 9;
+# print "$fahr degrees Fahrenheit is equivalent to ";
+# printf("%.0f degrees Celsius\n", $cel);
+
+##CODE IS RUNNING PERFECT
+
+
+##PATTERN MATCHING
+
+# $cookie = "";
+#  while ($cookie !~ /cookie/i){
+# 	print "Give me a cookie: ";
+# 	chomp ($cookie = <STDIN>);
+
+# }
+# print "Done"
+
+##PATTERN MATCHING IS GOOD
+
+# $s=Asb;
+# $n = $s =~ m/Asd/;
+# print $n;
+
+# print “now reading the ${val}th value\n”;
+
+# $nu= '0x324';
+# print $nu; print "\n";
+
+# $hxnum = oct $nu;
+# print $hxnum; print "\n";
+
+# $j= hex $hxnum;
+# print $j;
+
+
+
+#Question 1 Day 2
+
+# $fahr = 0;
+# $cel = 0;
+# print "Enter a temperature in Fahrenheit: ";
+# chomp ($cel = <STDIN>);
+# $fahr = (9 * $cel) / 5 + 32;
+# print "$cel degrees Celsius is equivalent to ";
+# printf("%.1f degrees Fahrenheit\n", $fahr);
+
+
+# #Question 2 Day 2
+
+# $w=0;
+# $l=0;
+# print "Enter width: ";
+# chomp($w = <STDIN>);
+# print "Enter height: ";
+# chomp($h = <STDIN>);
+# $sq = ($w * $h);
+# print $sq;
+
+
+#Question 3 Day 2
+
+# print 'Enter the word Foo: ';
+# chomp($input = <STDIN>);
+# if ($input eq 'Foo') {
+# print "Thank you!\n";
+# } else {
+# print "That’s not the word Foo.\n";
+# }
+
+#Question 5 Day 2
+
+$name='';
+while($name !~ m/bye/){
+	print "Enter the name: ";
+	chomp($name=<STDIN>);
+	print "Hi $name \n";
+}
