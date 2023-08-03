@@ -1,0 +1,164 @@
+# $a=4;
+# $b=2;
+# $a= $b++;
+
+# print "$a, $b \n";
+
+# $x='maddy ';
+# print $x.'foo';
+# $fa = 'hui'x 4;
+# print " $fa";
+# print 'hola'x 4;
+
+
+# ##Average Calculator
+
+# $input = '';
+# $sum=0;
+# # $avg=0;
+# # $count=0;
+# # while ($count != 4){
+# # 	print 'Enter a number: ';
+# # 	chomp ($input = <STDIN>);
+
+
+
+# # 	if ($input =~ /\D/){
+# # 		print "Digits only, please.\n";
+# # 		next;
+# # 	}
+# # 	$count++;
+# # 	$sum += $input;
+
+# # }
+
+# # $avg = $sum / 4;
+# # print "\nTotal count of numbers: $count\n";
+# # print "Total sum of numbers: $sum\n";
+# # printf("Average (mean): %.2f\n", $avg);
+
+
+
+# # Stock calculation
+
+# $st_p=0;
+# $st_s=0;
+# $st_c=0;
+
+# while(){
+
+# 	print " Enter price of purchase";
+# 	chomp($st_p=<STDIN>);
+# 	print " Enter price of selling";
+# 	chomp($st_s=<STDIN>);
+
+# 	if ($st_s eq '' or $st_p eq '' ) {
+# 	 print "Either the purchase or current price is missing.\n";
+# 	 next;
+# 	 }
+	
+# 	 if ($st_p =~ /\D/ or $st_s =~ /\D/ ) {
+# 	 	if ($st_p =~ /\// or $st_s =~ /\//) {
+# 	 	print "Please enter prices as decimal numbers.\n";
+# 	 	next;
+# 	 	} else {
+# 	 	print "Digits only, please.\n";
+# 	 	next;
+# 	 	}
+# 	 }
+
+	
+
+# 	if ($st_p == $st_s){
+# 		print "No profit No Loss!!\n";
+# 		}
+# 		if ($st_p >$st_s){
+# 			$lp= int(($st_p - $st_s) / $st_p * 100);
+# 			print "Loss Occured in percentage : $lp%\n";
+# 		}
+
+# 		if ($st_s >$st_p){
+# 			$pp= int( ($st_s - $st_p) / $st_p * 100);
+# 			printf " Profit occured in percentage : $pp% \n";
+# 		}
+
+# }
+
+
+#QUESTION NUMBER 1 DAY 3
+
+# $input=0;
+# $lines=0;
+# while(){
+# 	print "enter anything: \n";
+# 	chomp($input = <STDIN>);
+# 	if ($input ne ''){
+# 		$lines++;
+# 	}
+# 	else{
+# 		last;
+# 	}
+# }
+
+# print "No. of lines : $lines";
+
+
+#QUESTION NUMER 3 DAY 3
+
+
+# $input=0;
+# # $lines=0;
+# while(){
+# 	print "enter anything: \n";
+# 	chomp($input = <STDIN>);
+# 	if ($input ne ''){
+# 		$lines.= $input;
+# 	}
+# 	else{
+# 		last;
+# 	}
+# }
+
+# print "$lines";
+
+
+#QUESTION NUMBER 4 DAY 3
+
+# $input='';
+# chomp($input=<STDIN>);
+# # printf (" %40.f \n",$input); 
+# print " " x 40; print "$input \n";
+# print '*' x 80;
+
+
+# $input = ""; # temporary input
+# $space = 0; # space around
+# $length = 0 ; # length of string
+# print 'Enter some text: ';
+# chomp ($input = <STDIN>);
+# $length = length $input;
+# $space = int((80 - $length) / 2);
+# print ' ' x $space;
+# print $input;
+# print ' ' x $space . "\n";
+# print '*' x 80;
+
+
+#QUESTION 5 DAY 3
+
+$fahr = 0;
+$cel = 0;
+while(){
+print "Enter a temperature in Fahrenheit: ";
+chomp ($fahr = <STDIN>);
+if($fahr =~ /\D/ and $fahr = ~/-/){
+	print "Invalid!!!\n";
+	next;
+}
+last;
+}
+$cel = ($fahr - 32) * 5 / 9;
+print "$fahr degrees Fahrenheit is equivalent to ";
+printf("%.0f degrees Celsius\n", $cel);
+
+
