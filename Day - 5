@@ -1,0 +1,382 @@
+# %hash = ("One", 1, 'two', 2, 'three',3); #we have defined a hash here
+# print $hash{"one"};
+# print %hash{"three"};
+
+# $t{'Port'} = 5;
+# print $t{'Port'};
+
+
+# @hashes = keys %hash;
+# @hasih = values %hash;
+# print "keys: @hashes \n";
+# print "Keys: @hashs \n";
+# print "Values: @hasih \n";
+
+# if (exists($hash{"HI"})){
+# 	print "Exists";
+# }
+# else {
+# 	print "Not exists";
+# }
+ 
+
+#  print "The size of araay is " ;
+#  print scalar @hashes;
+# %temps = (
+# 'Boston' => ' 32 ',
+# 'New York' => ' 24 ',
+# 'Miami' => 78,
+# 'Portland' => 45,
+# 'Boston' => 30, # this value will overwrite 32
+# # and so on...
+# );
+
+
+# $temps{'Meerut'} = 123;
+
+
+
+# $hash2{new} = delete $temps{Boston};
+
+# foreach $city (sort keys %temps) {
+# print "$city: $temps{$city} degrees\n";
+# }
+
+# foreach $t (sort{$a <=> $b} values %temps) {
+# print "$t $temps{$t} degrees in $temps{$city}\n";
+# }
+
+# print %temps;
+
+# $stringofnums = '34 23 56 34 78 38 90';
+
+# @ha= split('',$stringofnums);
+# print "@ha";
+# print "@ha[-2]";
+# ($x, $y, $z, undef, @remainder) = split(' ', $stringofnums);
+# print " @remainder";
+
+# # example that splits on commas:
+# $commasep = "45,32,56,123,hike!";
+# @stuff = split(/,/, $commasep);
+# print "@stuff";
+
+
+# $in='';
+# %names=();
+# $fn='';
+# $ln ='';
+# while(){
+# 	print "ENter name: \n";
+# 	chomp($in=<STDIN>);
+# 	if ($in eq ''){
+# 		last;
+# 	}
+	
+# 		($fn, $ln) = split(' ', $in);
+# 		$names{$ln} = $fn;
+# 		}
+	
+
+# 	foreach $last (sort keys %names){
+# 		print "$last, $names{$last} \n";
+# 	}
+
+
+# $price= 0;
+# $whole = 0;
+
+# $in=0;
+# $numerator = 0;
+# $frac='';
+# $denominator = 0;
+
+# while(){
+# 	print "ENter price";
+# 	chomp($in=<STDIN>);
+# 	if ($in eq ''){
+# 		last;
+# 	}
+# 	if($in =~ /\//){
+# 		if ($in =~ /\d\s+/){
+# 			($whole, $frac) = split(' ',$in);
+# 		}
+# 		else{
+# 			$whole = 0;
+# 			$frac = $in;
+# 		}
+
+# 		($numerator, $denominator) = split(/\//, $frac);
+# 		$in =$whole + $numerator/$denominator;
+# 		$in = sprintf("%.2f", $in);
+
+# 	}
+# 	print " Price : $in \n";
+# }
+
+# $x=1;
+# while($x <= 100 )
+# {
+# 	if ($x){
+# 		print "Hi, ";
+# 		print $x;
+# 		$x++;
+# 	}
+# }
+
+# $this = 0;
+# $that = 'ksfs';
+# $val = $this ? $this : $that;
+# print $val;
+
+# $x=20;
+# until ($x<10){
+# 	$x--;
+# 	print $x; print " ";
+# }
+
+
+#!/usr/local/bin/perl -w
+# $input = ''; # temporary input
+# $count = 0; # count of numbers
+# $sum = 0; # sum of numbers
+# $avg = 0; # average
+# while () {
+# print 'Enter a number: ';
+#  chomp ($input = <STDIN>);
+#  if ($input eq '') { last; }
+
+#  if ($input =~ /\D/) {
+#  print "Digits only, please.\n";
+#  next;
+#  }
+
+#  $count++;
+#  $sum += $input;
+#  }
+
+#  $avg = $sum / $count;
+
+#  # print " \nTotal count of numbers: $count\n";
+#  # print "Total sum of numbers: $sum\n";
+#  # printf("Average (mean): %.2f\n", $avg);
+# while () {
+# print 'Enter your numbers, all on one line, separated by spaces: ';
+# chomp ($input = <STDIN>);
+# if ($input eq '') {
+# print "Please enter some input.\n";
+# next;
+# }
+# @nums = split(' ', $input); # split into nums
+# foreach $key (@nums) {
+# if ($key =~ /\D/) {
+# print "$key contains a non-digit character. ";
+# print "Please enter your input again.\n";
+# @nums = ();
+# next;
+# }
+# }
+# if (@nums) { last; }
+# }
+# $count = @nums; # get the count
+# foreach $num (@nums) { # count freqs, sum
+# $freq{$num}++;
+# $sum += $num;
+# }
+# @nums = sort { $a <=> $b } @nums;
+# $avg = $sum / $count;
+# $med = $nums[$count /2];
+
+# $number =0;
+# $input = ''; # temporary input
+# $count = 0; # count of numbers
+# $sum = 0; # sum of numbers
+# $avg = 0; # average
+# while () {
+# print 'Enter all numbers with spaces: ';
+# # chomp($input=<STDIN>);
+# # @nums = split(' ',$input);
+# # 
+# print "@nums ";
+# # $number += $input;
+# print "\n";
+
+
+# if($input eq ' '){
+# 	last;
+# }
+
+# }
+
+# $l = length(@nums);
+# $m= ($number / $l);
+# print "$m";
+
+# foreach $number (@nums) {
+	
+# 	print "$number \n";
+# }
+
+# $sum+= $input;
+# $count++;
+# }
+# $mean = ($sum / $count);
+# print "$mean";
+
+
+
+#in = “”; # temporary input
+# %names = (); # hash of names
+# @raw = (); # raw words
+# $fn = ""; # first name
+# $ln = ""; #
+
+
+
+# while () {
+# print 'Enter a name (first and last): ';
+# chomp($in = <STDIN>);
+# if ($in eq '') { last; }
+# @raw = split(" ", $in);
+# if ($#raw == 1) { # regular case, two names
+# $names{$raw[1]} = $raw[0];
+# } else { # build a first name from all names
+# $ln = pop @raw; # remove last name
+# foreach $name (@raw) { # build up first name
+# $fn = $fn . ' ' . $name;
+# }
+# $names{$ln} = $fn;
+# }
+# $fn = $ln = ""; # reset each time
+# }
+# foreach $lastname (sort keys %names) {
+# print "$lastname, $names{$lastname}\n";
+# }
+
+
+
+#QUESTION 4
+
+
+# $in = ''; # temporary input
+# %names = (); # hash of names
+# $fn = ''; # temp firstname
+# $ln = ''; # temp lastname
+# $count = 0; # for nums
+# while () {
+# print 'Enter a name (first and last): ';
+# chomp($in = <STDIN>);
+# if ($in eq '') { last; }
+# ($fn, $ln) = split(' ', $in);
+# if (exists $names{$ln}) { # name is already there!
+# $ln = $ln . "_" . $count; # tag this name with a number
+# }
+# $names{$ln} = $fn;
+# $count++;
+# }
+# foreach $lastname (sort keys %names) {
+# if ($lastname =~ /_/) { # this is a tagged name
+# ($ln, undef) = split(/_/, $lastname); #remove number for printing
+# } else { $ln = $lastname }
+# print "$ln, $names{$lastname}\n";
+# }
+
+#OUTPUT OF QUESTION 4 DAY 5
+
+# Enter a name (first and last): krishna raj
+# Enter a name (first and last): a raj
+# Enter a name (first and last): b raj
+# Enter a name (first and last): human raj
+# Enter a name (first and last):
+# raj, krishna
+# raj, a
+# raj, b
+# raj, human
+
+
+#WE HAVE TESTED HASHES HERE FOR THE SAME DESIRED OUTPUT BUT WE GOT SOMETHING DIFFERENT
+
+#!/usr/local/bin/perl -w
+# $in = ''; # temporary input
+# %names = (); # hash of names
+# $fn = ''; # temp firstname
+# $ln = ''; # temp lastname
+# while () {
+# print 'Enter a name (first and last): ';
+#  chomp($in = <STDIN>);
+#  if ($in eq '') { last; }
+
+#  ($fn, $ln) = split(' ', $in);
+#  $names{$ln} = $fn;
+#  }
+
+#  foreach $lastname (sort keys %names) {
+#  print "$lastname, $names{$lastname}\n";
+#  }
+
+
+#OUTPUT OF THIS CODE
+
+# Enter a name (first and last): k gand
+# Enter a name (first and last): f gand
+# Enter a name (first and last): t gand
+# Enter a name (first and last):
+# gand, t
+
+# $i =0;
+# KRISHNA: while ($i<10){
+# 	print $i;
+# 	$i++;
+# } KRISHNA
+
+# $stringofnums = '34 23 56 34 78 38 90';
+# @s = "123,2,3,4,5,6,45";
+# foreach $i(@s){
+# 	print "$i ";
+
+# }
+
+
+# @newarr=();
+# for (@arr=(1,2,3,4,5); @arr>0; @newarr = pop @arr){
+# 	print "the new arr is : @newarr\n";
+# 	@n= @newarr.@n;
+# 	print "\n@n";
+# }
+
+
+# foreach $loop (1 .. 5) {
+# print "loop $loop\n";
+# }						#One other important thing to note about the $key variable; it does not just contain the
+# @ones = (1,1,1,1,1);	#value of the current list element, it is the actual list element. If you change the value of
+# $switch = 0;			#$key inside the block, then you will also be changing that list element, and therefore
+# foreach $key (@ones) {	#the list (or array or hash) itself. In programmer parlance: the $key variable is passed by
+# if (!$switch) {			#reference.							
+# $switch = 1;
+# $key = 2;
+# } else {$switch = 0};
+# }
+# print "@ones\n";
+# %hash=("One", 1, 'two', 2, 'three',3);
+# foreach (sort keys %hash){
+# print "Key: $_, and it's Value: $hash{$_}\n";
+# }
+
+
+# Perl Program to demonstrate the
+# subroutine declaration and calling
+
+#!/usr/bin/perl
+
+# defining subroutine
+# sub ask_user {
+# print "Hello Geeks!\n";
+# }
+
+# # calling subroutine
+# # you can also use
+# # &ask_user();
+# ask_user();
+# ask_user();
+# ask_user();
+# ask_user();
