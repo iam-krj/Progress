@@ -1,0 +1,186 @@
+# @st = qw(tr wehua sduhfi Ger rt ty Gyu sdjfnk sdfn huahuaskjdbajkd baahua);
+# chomp($key = <STDIN>);
+# # foreach $el (@st){
+# # 	if ($key eq $el){
+# # 	print "Found";
+
+# # 	}						#INPUT = "hua"
+# # 							#OUTPUT = NOT FOUNDNOT FOUNDNOT FOUNDNOT FOUNDNOT FOUNDNOT FOUND
+# # }
+
+# foreach $el (@st) {
+# if ((index $el, $key) >= 0) { # -1 means not found
+# # $found = 1;					#INPUT = "hua"
+# print "FOUND ";				#OUTPUT = FOUND
+# }
+# }
+
+ 
+# foreach $i (@st){							#INPUT = "hua"
+# 	if ($i =~ /$key/){ print "HAA ";}		#OUTPUT = "HAA HAA HAA"
+# }
+
+
+
+# @large = grep { $_ > 100 } @nums;
+# chomp($key = <STDIN>);
+# print ""
+
+
+# %nums = (1..110);
+# @l= grep{$_ >100 or $nums{$_} > 100} sort{$a<=> $b} %nums;
+# print "@l ";		#OUTPUT = 101 102 103 104 105 106 107 108 109 110
+
+# @words = qw(asda asdkfnskd fsd sdjnkfnsjl fa fibauig aghub askdbs d bksdssbb )
+# @exes = grep /x/, @words;
+
+
+# @st = qw(tr wehua sduhfi Ger rt ty Gyu sdjfnk sdfn huahuaskjdbajkd baahua);
+# @A = grep(/^G/, @st);
+# print @A;
+
+# %numhash = qw(ere 2 sfdf 34 fgl 56 dfjkl 8768);
+# @largekeys = grep { $_ > 100 or $numhash{$_} > 10 } keys %numhash;
+# print "@largekeys ";  #OUTPUT = fgl dfjkl sfdf
+
+#USE OF SPLICE FUNCTION
+
+# @n=(0..9);
+# print splice (@n , 8);
+# print "\n";
+# @y = splice (@n , 8) ;
+# print "@y ";
+
+# splice (@n, 5, 3);
+# splice (@n, 5, 3, qw(five six seven));
+# print "@n ";
+
+#USES OF JOIN
+
+# @list = split(' ', "1 2 3 4 5 6 7 8 9 10");
+# print @list; print "\n";
+
+# $s = join('&', @list);
+# print "$s ";
+
+# $ns = join '&', qw(hi bye go run);
+# print $ns;
+
+##USES OF MAPS
+
+# @nums = (1..10);
+# @sq = map {$_ ** 2} @nums;
+# print " @sq ";
+
+
+# $string = 'perlmemedfasjldhflsdgjsifgnvmdfmm.org';
+# print $h = length($string);
+# print "\n";
+# $char = 'f';
+
+# $result = rindex($string, $char);
+# $res = index($string, $char);
+#  print "The last occurence of value in string from start is $result and the first occurence value from start is $res \n";
+
+
+
+##THE OUTPUT OF THIS CODE##
+#37
+#The last occurence of value in string from start is 30 and the first occurence value from start is 9 
+
+# $string = 'BOBBYSINGHmemedfasjldhflsdgjsifgnvmdfmmorg';
+# substr($string, 5, 3) = "parthenogenesis";
+# print $string;
+
+# OUTPUT
+
+# BOBBYparthenogenesisGHmemedfasjldhflsdgjsifgnvmdfmmorg
+
+
+# $str = “This is a test string. The string we want to change.”;
+# $pos = 0;
+# $key = ‘i’;
+# $repl = "RR";
+
+
+# @old = ('one & two',     ' &three four');
+# @new = map { split "&" } @old;
+# print @new;
+
+# @list = qw(1 23 4 34 534 513 43 52);
+
+# foreach $string (@list) {
+# push @reversed, reverse $string;
+# }
+# print "@list "; print "\n";
+# print "@reversed "; print "\n";
+# print $string;
+
+
+# $str = "This is a test string. The string we want to change.";
+# $pos = 0;
+# $key = 'i';
+# $repl = "&";
+# $str =~ s/$key/$repl/g;
+# print $str;
+
+#OUTPUT OF THIS CODE IS 
+#Th&s &s a test str&ng. The str&ng we want to change.
+
+
+
+
+# @list='';
+# push @list, 1;
+# push @list, (2,3,4);
+# $list[5] = "foo";
+# shift @list;
+# print @list;
+# print "\n";
+# @liste = '';
+# splice(@liste,0, 1,(1,2,3,4,'foo'));
+# print @list;
+
+#QUESTION 4
+
+# @list2 = grep {$_ < 5 } @list;
+
+# foreach (@list){
+#     if ($input < 5){
+#         push @list2, $_;
+#     }
+# }
+
+
+
+
+
+# $count=0;
+# $input='';
+# $k='';
+# $pos = 0;
+# print "Enter the string: \n";
+# chomp($input = <STDIN>);
+# print "ENter yhr character: \n";
+# chomp($k = <STDIN>);
+# # while( $pos < (length $input) and $pos!=-1){
+# #     $pos = index ($input, $k, $pos);
+# #     if ($pos != -1)
+# #     {$count++; $pos++;} 
+# # }
+
+# @i = split ('', $input);
+# @A = grep(/^$k/, @i);
+# $c = scalar @A; 
+# #  $count = grep {$_ eq $k} @i; 
+# #  $c = scalar $count;
+# print "$k appears $c times.";
+
+
+# #! #!
+# @list = qw(12 34 45 5 32 3 43 4);
+# while ($i <= $#list) {
+# $str = @novel[$i++];
+# push @final, reverse $str;
+# }
+# print $str;
